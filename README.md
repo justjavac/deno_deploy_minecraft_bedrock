@@ -1,4 +1,4 @@
-# deno_deploy_minecraft_bedrock
+# Minecraft Bedrock Installer
 
 ```bash
 curl -fsSL https://bedrock.deno.dev | sh
