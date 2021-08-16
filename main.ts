@@ -10,6 +10,7 @@ async function handleRequest() {
 
   return new Response(`#!/bin/sh
 # Copyright justjavac. All rights reserved. MIT license.
+# https://github.com/justjavac/deno_deploy_minecraft_bedrock
 
 set -e
 
