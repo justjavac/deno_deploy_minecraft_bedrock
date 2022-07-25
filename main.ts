@@ -1,6 +1,8 @@
+import { serve } from "https://deno.land/std@0.149.0/http/server.ts";
+
 async function handleRequest() {
   const response = await fetch(
-    "https://www.minecraft.net/en-us/download/server/bedrock"
+    "https://www.minecraft.net/en-us/download/server/bedrock",
   );
   const body = await response.text();
   const regx =
@@ -35,6 +37,4 @@ echo "  Run './start.sh' to get started."
 `);
 }
 
-addEventListener("fetch", (event) => {
-  event.respondWith(handleRequest());
-});
+serve(handleRequest);
